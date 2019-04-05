@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us" >
+<head>
+<title>Neo Calculator</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Neo Calculator" />
+<meta name="generator" content="VisualNEO Web (2018.12.28)" />
+<meta name="date" content="2019-04-06 01:27" />
+<meta name="version" content="1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/nzAnimate.min.css">
+<link rel="stylesheet" href="css/neoapp-ui.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="ng-app" ng-app="NeoApp" ng-cloak>
+<div ng-controller="NeoApp_CoreCtrl" ng-view ng-cloak id="ng-view" class="app-viewport[NAB._pageEffect]"></div>
+<script type="text/ng-template" id="Main">
+<div id="Main">
+<div id="Container1" class="[NAB.Container1_effect]" ng-style="NAB.Container1_style" ng-hide="NAB.Container1_hidden" ng-disabled="NAB.Container1_disabled">
+</div>
+<div id="Container8" class="[NAB.Container8_effect]" ng-style="NAB.Container8_style" ng-hide="NAB.Container8_hidden" ng-disabled="NAB.Container8_disabled">
+<h2 id="Headline1" class="[NAB.Headline1_effect]" ng-style="NAB.Headline1_style" ng-hide="NAB.Headline1_hidden" ng-disabled="NAB.Headline1_disabled">[Result]</h2>
+<div id="Paragraph1" class="[NAB.Paragraph1_effect]" ng-style="NAB.Paragraph1_style" ng-hide="NAB.Paragraph1_hidden" ng-disabled="NAB.Paragraph1_disabled">[MemoryCue]</div>
+</div>
+<button id="Button21" type="button"  class="btn btn-info btn-lg [NAB.Button21_effect]" ng-style="NAB.Button21_style" ng-hide="NAB.Button21_hidden" ng-disabled="NAB.Button21_disabled" ng-click="Button21_click()">M<span style="font-size:50%">RC</span></button>
+<button id="Button22" type="button"  class="btn btn-info btn-lg [NAB.Button22_effect]" ng-style="NAB.Button22_style" ng-hide="NAB.Button22_hidden" ng-disabled="NAB.Button22_disabled" ng-click="Button22_click()">M<span style="font-size:50%">C</span></button>
+<button id="Button23" type="button"  class="btn btn-info btn-lg [NAB.Button23_effect]" ng-style="NAB.Button23_style" ng-hide="NAB.Button23_hidden" ng-disabled="NAB.Button23_disabled" ng-click="Button23_click()">M<span style="font-size:50%">S</span></button>
+<button id="Button24" type="button"  class="btn btn-primary btn-lg [NAB.Button24_effect]" ng-style="NAB.Button24_style" ng-hide="NAB.Button24_hidden" ng-disabled="NAB.Button24_disabled" ng-click="Button24_click()">/</button>
+<button id="Button25" type="button"  class="btn btn-default btn-lg [NAB.Button25_effect]" ng-style="NAB.Button25_style" ng-hide="NAB.Button25_hidden" ng-disabled="NAB.Button25_disabled" ng-click="Button25_click()">7</button>
+<button id="Button26" type="button"  class="btn btn-default btn-lg [NAB.Button26_effect]" ng-style="NAB.Button26_style" ng-hide="NAB.Button26_hidden" ng-disabled="NAB.Button26_disabled" ng-click="Button26_click()">8</button>
+<button id="Button27" type="button"  class="btn btn-default btn-lg [NAB.Button27_effect]" ng-style="NAB.Button27_style" ng-hide="NAB.Button27_hidden" ng-disabled="NAB.Button27_disabled" ng-click="Button27_click()">9</button>
+<button id="Button28" type="button"  class="btn btn-primary btn-lg [NAB.Button28_effect]" ng-style="NAB.Button28_style" ng-hide="NAB.Button28_hidden" ng-disabled="NAB.Button28_disabled" ng-click="Button28_click()">X</button>
+<button id="Button29" type="button"  class="btn btn-default btn-lg [NAB.Button29_effect]" ng-style="NAB.Button29_style" ng-hide="NAB.Button29_hidden" ng-disabled="NAB.Button29_disabled" ng-click="Button29_click()">4</button>
+<button id="Button30" type="button"  class="btn btn-default btn-lg [NAB.Button30_effect]" ng-style="NAB.Button30_style" ng-hide="NAB.Button30_hidden" ng-disabled="NAB.Button30_disabled" ng-click="Button30_click()">5</button>
+<button id="Button31" type="button"  class="btn btn-default btn-lg [NAB.Button31_effect]" ng-style="NAB.Button31_style" ng-hide="NAB.Button31_hidden" ng-disabled="NAB.Button31_disabled" ng-click="Button31_click()">6</button>
+<button id="Button32" type="button"  class="btn btn-primary btn-lg [NAB.Button32_effect]" ng-style="NAB.Button32_style" ng-hide="NAB.Button32_hidden" ng-disabled="NAB.Button32_disabled" ng-click="Button32_click()">-</button>
+<button id="Button33" type="button"  class="btn btn-default btn-lg [NAB.Button33_effect]" ng-style="NAB.Button33_style" ng-hide="NAB.Button33_hidden" ng-disabled="NAB.Button33_disabled" ng-click="Button33_click()">1</button>
+<button id="Button34" type="button"  class="btn btn-default btn-lg [NAB.Button34_effect]" ng-style="NAB.Button34_style" ng-hide="NAB.Button34_hidden" ng-disabled="NAB.Button34_disabled" ng-click="Button34_click()">2</button>
+<button id="Button35" type="button"  class="btn btn-default btn-lg [NAB.Button35_effect]" ng-style="NAB.Button35_style" ng-hide="NAB.Button35_hidden" ng-disabled="NAB.Button35_disabled" ng-click="Button35_click()">3</button>
+<button id="Button36" type="button"  class="btn btn-primary btn-lg [NAB.Button36_effect]" ng-style="NAB.Button36_style" ng-hide="NAB.Button36_hidden" ng-disabled="NAB.Button36_disabled" ng-click="Button36_click()">+</button>
+<button id="Button37" type="button"  class="btn btn-default btn-lg [NAB.Button37_effect]" ng-style="NAB.Button37_style" ng-hide="NAB.Button37_hidden" ng-disabled="NAB.Button37_disabled" ng-click="Button37_click()">0</button>
+<button id="Button38" type="button"  class="btn btn-default btn-lg [NAB.Button38_effect]" ng-style="NAB.Button38_style" ng-hide="NAB.Button38_hidden" ng-disabled="NAB.Button38_disabled" ng-click="Button38_click()">.</button>
+<button id="Button39" type="button"  class="btn btn-default btn-lg [NAB.Button39_effect]" ng-style="NAB.Button39_style" ng-hide="NAB.Button39_hidden" ng-disabled="NAB.Button39_disabled" ng-click="Button39_click()">C</button>
+<button id="Button40" type="button"  class="btn btn-warning btn-lg [NAB.Button40_effect]" ng-style="NAB.Button40_style" ng-hide="NAB.Button40_hidden" ng-disabled="NAB.Button40_disabled" ng-click="Button40_click()">=</button>
+<div id="Paragraph2" class="[NAB.Paragraph2_effect]" ng-style="NAB.Paragraph2_style" ng-hide="NAB.Paragraph2_hidden" ng-disabled="NAB.Paragraph2_disabled">VisualNEO Calculator</div>
+</div>
+</script>
+<script type="text/ng-template" id="NewDialog1">
+<div id="DialogContainer1" class="modal-dialog modal-sm"><div class="modal-content" style="height:100%"><div class="modal-header bg-default"><button type="button" id="DialogContainer1_closebtn" class="close" ng-click="CloseDialog();"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><h4 class="modal-title">&nbsp;</h4></div>
+</div></div>
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-touch.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
+<script src="js/angular-sanitize.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/neoapp.min.js"></script>
+<script src="js/neoapp-ui.min.js"></script>
+<script src="phonegap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
